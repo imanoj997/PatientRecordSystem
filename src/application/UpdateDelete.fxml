@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateAndDelete">
+   <children>
+      <Label layoutX="178.0" layoutY="10.0" prefHeight="37.0" prefWidth="262.0" text="Patient Record System" textFill="#0ef51d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="59.0" prefHeight="19.0" prefWidth="45.0" text="PID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idPatient" layoutX="49.0" layoutY="54.0" prefHeight="30.0" prefWidth="45.0" />
+      <Button layoutX="109.0" layoutY="54.0" mnemonicParsing="false" onAction="#getPatientByID" onKeyPressed="#getPatientByID" prefHeight="25.0" prefWidth="56.0" text="Find">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <VBox layoutX="30.0" layoutY="139.0" prefHeight="233.0" prefWidth="97.0" spacing="3.0">
+         <children>
+            <Label layoutX="37.0" layoutY="110.0" prefHeight="30.0" prefWidth="97.0" text="Patient Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="140.0" prefHeight="30.0" prefWidth="97.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="170.0" prefHeight="30.0" prefWidth="97.0" text="Age">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="200.0" prefHeight="30.0" prefWidth="97.0" text="Disease">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="230.0" prefHeight="30.0" prefWidth="97.0" text="Doctor Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="260.0" prefHeight="30.0" prefWidth="97.0" text="Admit Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="290.0" prefHeight="30.0" prefWidth="97.0" text="Discharge Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="154.0" layoutY="139.0" spacing="9.0">
+         <children>
+            <TextField fx:id="Patient_Name1" layoutX="160.0" layoutY="139.0" prefHeight="20.0" prefWidth="183.0" />
+            <TextField fx:id="Address1" layoutX="160.0" layoutY="175.0" prefHeight="20.0" prefWidth="183.0" />
+            <TextField fx:id="Age1" layoutX="160.0" layoutY="211.0" prefHeight="20.0" prefWidth="183.0" />
+            <TextField fx:id="Disease1" layoutX="154.0" layoutY="243.0" prefHeight="20.0" prefWidth="183.0" />
+            <TextField fx:id="Doctor_Name1" layoutX="154.0" layoutY="274.0" prefHeight="20.0" prefWidth="183.0" />
+            <DatePicker fx:id="Admit_Date1" prefHeight="25.0" prefWidth="184.0" />
+            <DatePicker fx:id="Discharge_Date1" layoutX="10.0" layoutY="180.0" prefHeight="25.0" prefWidth="184.0" />
+         </children>
+      </VBox>
+      <Line endX="100.0" layoutX="441.0" layoutY="253.0" rotate="90.0" startX="-100.0" AnchorPane.bottomAnchor="146.5" AnchorPane.topAnchor="252.5" />
+      <Button layoutX="479.0" layoutY="170.0" mnemonicParsing="false" onAction="#updatePatient" prefHeight="30.0" prefWidth="86.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="479.0" layoutY="232.0" mnemonicParsing="false" onAction="#deletePatient" prefHeight="30.0" prefWidth="86.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="479.0" layoutY="296.0" mnemonicParsing="false" onAction="#retunHomeScreen" prefHeight="30.0" prefWidth="86.0" text="Return">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

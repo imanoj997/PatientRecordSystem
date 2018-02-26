@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+	<items>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="600.0">
+         <children>
+            <VBox fillWidth="false" layoutX="140.0" AnchorPane.bottomAnchor="252.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Patient Record System" textFill="#0ae82b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="198.0" layoutY="92.0" prefHeight="45.0" prefWidth="202.0" text="M3A Hospital" textFill="#0ad736">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="60.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="160.0" fitWidth="209.0" layoutX="202.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/application/images/Screenshot%20(7).png" />
+               </image>
+            </ImageView>
+         </children>
+		</AnchorPane>
+		<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="600.0">
+			<children>
+				<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="600.0">
+					<children>
+						<Button mnemonicParsing="false" onAction="#addRecord" prefHeight="50.0" prefWidth="200.0" text="Add Patient Record">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Button>
+      						<Button mnemonicParsing="false" onAction="#updateRecord" prefHeight="50.0" prefWidth="198.0" text="Update Patient Record" wrapText="true">
+      							<font>
+      								<Font name="System Bold" size="14.0" />
+      							</font>
+      						</Button>
+      						<Button mnemonicParsing="false" onAction="#viewData" prefHeight="50.0" prefWidth="201.0" text="View Patient Record" wrapText="true">
+      							<font>
+      								<Font name="System Bold" size="14.0" />
+      							</font>
+      						</Button>
+					</children>
+				</HBox>
+			</children>
+		</AnchorPane>
+	</items>
+</SplitPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PatientsDetailsController">
+	<children>
+		<SplitPane dividerPositions="0.1658291457286432" layoutX="106.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<items>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="95.0" prefWidth="598.0" SplitPane.resizableWithParent="false">
+					<children>
+						<VBox alignment="TOP_CENTER" layoutX="168.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="168.0" AnchorPane.topAnchor="0.0">
+							<children>
+								<Label layoutX="168.0" prefHeight="37.0" prefWidth="262.0" text="Patient Record System" textFill="#0ef51d" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="168.0" AnchorPane.topAnchor="0.0">
+									<font>
+										<Font name="System Bold" size="23.0" />
+									</font>
+								</Label>
+								<Label layoutX="245.0" layoutY="41.0" text="M3A Hospital" textFill="#0be039" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="41.0" VBox.vgrow="ALWAYS">
+									<font>
+										<Font size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+                  <Button layoutY="37.0" mnemonicParsing="false" onAction="#retunHomeScreen" text="Home" />
+					</children>
+				</AnchorPane>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+					<children>
+						<TableView fx:id="table" layoutX="137.0" layoutY="106.0" prefHeight="329.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<columns>
+								<TableColumn fx:id="pidcol" prefWidth="32.0" text="PID" />
+								<TableColumn id="patientName" fx:id="patientNamecol" prefWidth="90.0" text="Patient Name" />
+								<TableColumn id="address" fx:id="addresscol" prefWidth="81.0" text="Address" />
+								<TableColumn id="age" fx:id="agecol" prefWidth="53.0" text="Age" />
+								<TableColumn id="disease" fx:id="diseasecol" prefWidth="82.0" text="Disease" />
+								<TableColumn id="doctorName" fx:id="doctorNamecol" prefWidth="85.0" text="Doctor Name" />
+								<TableColumn id="admitDate" fx:id="admitDatecol" minWidth="0.0" text="Admit Date" />
+								<TableColumn id="dischargeDate" fx:id="dischargeDatecol" maxWidth="95.0" prefWidth="94.0" text="Discharge Date" />
+							</columns>
+						</TableView>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+	</children>
+</AnchorPane>
